@@ -25,6 +25,14 @@ Siga estas etapas para instalar o Grafana + Prometheus em seu sistema:
    ```
    /etc/systemd/system/grafana-server.service.d/override.conf
    ```
+
+2. **Durante a execução do script, o segundo arquivo de texto será automaticamente aberto; para concluir a instalação altere as targets padrões para os endereços desejados, exemplo:**
+   ```
+   #Troque:
+   - targets: ["localhost:9090"]
+   #Por:
+   - targets: ["192.168.0.1:9100, 192.168.0.2:9100"]
+   ```
    
 ## Notas Adicionais
 
