@@ -39,7 +39,5 @@ cd
 wget https://github.com/prometheus/prometheus/releases/download/v2.45.2/prometheus-2.45.2.linux-arm64.tar.gz
 tar xvf prometheus-2.45.2.linux-arm64.tar.gz
 cd prometheus-2.45.2.linux-arm64/
-#espaço para mudar os argumentos do arquivo de configuração
-tee prometheus.yml s/asdfsdf/asdfasdf/g 
-#
+vim prometheus.yml
 ./prometheus --config.file=./prometheus.yml
